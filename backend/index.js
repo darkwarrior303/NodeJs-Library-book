@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 const connectDB = async () => {
-    // app.use('/api', isAuthorized)
+    app.use('/api', isAuthorized)
     app.use('/', router);
 }
 
